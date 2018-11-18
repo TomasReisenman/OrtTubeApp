@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -18,13 +19,14 @@ namespace OrtApp.Models
         public virtual Usuario Usuario { get; set; }
     }
 
-    /*
-     *  public class VideoDB : DbContext
+
+
+      public class VideoDB : DbContext
     {
         public DbSet<Video> Videos { get; set; }
-        public DbSet<Usuario> Usuarios { get; set;}
+        public DbSet<Usuario> Usuarios { get; set; }
     }
-     * 
-     */
+     
+
 
 }
