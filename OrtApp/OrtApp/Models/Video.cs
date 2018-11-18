@@ -17,4 +17,14 @@ namespace OrtApp.Models
   
         public virtual Usuario Usuario { get; set; }
     }
+
+    /*
+     *  public class VideoDB : DbContext
+    {
+        public DbSet<Video> Videos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set;}
+    }
+     * 
+     */
+
 }
