@@ -194,3 +194,7 @@ C:\Users\tomma\Desktop\Tomas\ORT\Nuevas tecnologias\OrtTubeApp\OrtApp\OrtApp\obj
 C:\Users\tomma\Desktop\Tomas\ORT\Nuevas tecnologias\OrtTubeApp\OrtApp\OrtApp\obj\Debug\OrtApp.csproj.CopyComplete
 C:\Users\tomma\Desktop\Tomas\ORT\Nuevas tecnologias\OrtTubeApp\OrtApp\OrtApp\obj\Debug\OrtApp.dll
 C:\Users\tomma\Desktop\Tomas\ORT\Nuevas tecnologias\OrtTubeApp\OrtApp\OrtApp\obj\Debug\OrtApp.pdb
+C:\Users\tomma\Desktop\Tomas\ORT\Nuevas tecnologias\OrtTubeApp\OrtApp\OrtApp\bin\EntityFramework.dll
+C:\Users\tomma\Desktop\Tomas\ORT\Nuevas tecnologias\OrtTubeApp\OrtApp\OrtApp\bin\EntityFramework.SqlServer.dll
+C:\Users\tomma\Desktop\Tomas\ORT\Nuevas tecnologias\OrtTubeApp\OrtApp\OrtApp\bin\EntityFramework.xml
+C:\Users\tomma\Desktop\Tomas\ORT\Nuevas tecnologias\OrtTubeApp\OrtApp\OrtApp\bin\EntityFramework.SqlServer.xml

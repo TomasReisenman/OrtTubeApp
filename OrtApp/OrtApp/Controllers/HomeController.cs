@@ -27,11 +27,6 @@ namespace OrtApp.Controllers
             return View();
         }
 
-        public ActionResult Ortube()
-        {
-            
-
-            return View();
-        }
+       
     }
 }
