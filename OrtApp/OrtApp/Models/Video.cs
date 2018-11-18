@@ -8,14 +8,13 @@ namespace OrtApp.Models
 {
     public class Video
     {
-        [Key]
+
         public int ID { get; set; }
         public string Description { get; set; }
         public string ImgUrl { get; set; }
         public string VideoUrl { get; set; }
-
-        public Usuario UsuarioID { get; set; }
-
+        public int UsuarioID { get; set; }
+  
         public virtual Usuario Usuario { get; set; }
     }
 }
