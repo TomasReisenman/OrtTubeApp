@@ -75,7 +75,7 @@ namespace OrtApp.Controllers
             {
                 db.Videos.Add(video);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Ortube", new { id = video.UsuarioID });
             }
 
             ViewBag.UsuarioID = new SelectList(db.Usuarios, "ID", "Nombre", video.UsuarioID);
@@ -109,7 +109,7 @@ namespace OrtApp.Controllers
             {
                 db.Entry(video).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Ortube", new { id = video.UsuarioID });
             }
             ViewBag.UsuarioID = new SelectList(db.Usuarios, "ID", "Nombre", video.UsuarioID);
             return View(video);
@@ -138,7 +138,7 @@ namespace OrtApp.Controllers
             Video video = db.Videos.Find(id);
             db.Videos.Remove(video);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Ortube");
         }
 
         protected override void Dispose(bool disposing)
