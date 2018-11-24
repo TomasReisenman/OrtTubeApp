@@ -39,6 +39,20 @@ namespace OrtApp.Controllers
                          where video.UsuarioID == id
                          select video;
 
+            var userName = from user in db.Usuarios
+                           where user.ID == id
+                           select user;
+
+            ViewBag.Name = userName.ToList().First().Nombre;
+
+            return View(videos.ToList());
+        }
+
+        public ActionResult OrtubeAllUsers()
+        {
+            var videos = from video in db.Videos
+                         select video;
+
             return View(videos.ToList());
         }
 

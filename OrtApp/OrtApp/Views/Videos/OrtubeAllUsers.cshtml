@@ -1,0 +1,84 @@
+﻿@model IEnumerable<OrtApp.Models.Video>
+
+@{
+    ViewBag.Title = "Home";
+}
+
+
+
+<div class="container">
+
+
+
+    <div class="row row-offcanvas row-offcanvas-right">
+
+
+
+        <div class="col-xs-12 col-sm-9">
+
+            <p class="pull-right visible-xs">
+
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+
+            </p>
+
+            <div class="jumbotron">
+
+                <h1>ORTube!</h1>
+
+                <p>Pone todos tus videos AQUI!!.</p>
+
+            </div>
+
+            <div class="row">
+
+                @foreach (var item in Model)
+                {
+                    <div class="col-xs-6 col-lg-4">
+
+                        <a href="@item.VideoUrl">
+
+                            <div class="thumb"><img class="itemImage" src="@item.ImgUrl" alt="Video"></div>
+
+                            <h4>@item.Description</h4>
+
+                        </a>
+
+                    </div>
+                }
+                </div>
+
+        </div>
+
+
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+
+            <div class="list-group">
+
+                <a href="https://www.google.com.ar/imghp?hl=es-419&tab=wi&authuser=0" class="list-group-item active">Google Imagenes</a>
+
+                <a href="https://www.youtube.com/" class="list-group-item">Youtube</a>
+
+                <a href="https://ar.pinterest.com/" class="list-group-item">Pinterest</a>
+
+                <a href="https://www.facebook.com/" class="list-group-item">Facebook</a>
+
+                <a href="https://twitter.com/" class="list-group-item">Twitter</a>
+
+                <a href="http://www.ort.edu.ar/" class="list-group-item">Estudia Aca!</a>
+
+            </div>
+
+        </div><!--/.sidebar-offcanvas-->
+
+    </div><!--/row-->
+
+
+
+    <hr>
+
+
+</div>
+
+
