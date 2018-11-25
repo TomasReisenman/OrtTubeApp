@@ -30,6 +30,8 @@ namespace OrtApp.Controllers
                          where video.UsuarioID==id
                          select video;
 
+            ViewBag.UsuarioID = id;
+
             return View(videos.ToList());
         }
 
@@ -44,6 +46,8 @@ namespace OrtApp.Controllers
                            select user;
 
             ViewBag.Name = userName.ToList().First().Nombre;
+
+            
 
             return View(videos.ToList());
         }
@@ -72,9 +76,10 @@ namespace OrtApp.Controllers
         }
 
         // GET: Videos/Create
-        public ActionResult Create()
+        public ActionResult Create(int id)
         {
-            ViewBag.UsuarioID = new SelectList(db.Usuarios, "ID", "Nombre");
+            //ViewBag.UsuarioID = new SelectList(db.Usuarios, "ID", "Nombre");
+            ViewBag.UsuarioID = id;
             return View();
         }
 
@@ -92,7 +97,7 @@ namespace OrtApp.Controllers
                 return RedirectToAction("Ortube", new { id = video.UsuarioID });
             }
 
-            ViewBag.UsuarioID = new SelectList(db.Usuarios, "ID", "Nombre", video.UsuarioID);
+            //ViewBag.UsuarioID = new SelectList(db.Usuarios, "ID", "Nombre", video.UsuarioID);
             return View(video);
         }
 

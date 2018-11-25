@@ -15,7 +15,7 @@ namespace OrtApp.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Guarda tus links de Youtube Aqui!!";
 
             return View();
         }
