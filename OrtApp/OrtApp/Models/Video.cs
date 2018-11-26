@@ -13,6 +13,8 @@ namespace OrtApp.Models
         public int ID { get; set; }
         public string Description { get; set; }
         public string ImgUrl { get; set; }
+
+        [RegularExpression(@".+www.youtube.com.+")]
         public string VideoUrl { get; set; }
         public int UsuarioID { get; set; }
   
