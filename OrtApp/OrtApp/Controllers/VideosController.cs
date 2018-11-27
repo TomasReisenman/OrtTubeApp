@@ -45,7 +45,14 @@ namespace OrtApp.Controllers
                            where user.ID == id
                            select user;
 
-            ViewBag.Name = userName.ToList().First().Nombre;
+            try
+            {
+
+                ViewBag.Name = userName.ToList().First().Nombre;
+            }
+            catch {
+
+            }
 
             
 

@@ -14,7 +14,7 @@ namespace OrtApp.Models
         public string Description { get; set; }
         public string ImgUrl { get; set; }
 
-        [RegularExpression(@".+www.youtube.com.+")]
+        [RegularExpression(@".+www.youtube.com.+",ErrorMessage ="Debe ser link de Youtube")]
         public string VideoUrl { get; set; }
         public int UsuarioID { get; set; }
   
